@@ -1,0 +1,73 @@
+.wrapper {
+    max-width: 1000px;
+    width: 90%;
+    background: #001F3F;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    margin-top: 35px;
+}
+
+img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+main.convenient-food ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+}
+
+main.convenient-food ul li {
+    background-color: #00334E;
+    color: #E8F9FD;
+    text-align: left;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+main.convenient-food ul li:hover {
+    background-color: #005F7A;
+    color: #FFFFFF;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    
+    .top-right-nav ul {
+        flex-wrap: wrap;
+    }
+
+    main.convenient-food ul li {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .wrapper {
+        padding: 10px;
+    }
+
+    image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+}
+

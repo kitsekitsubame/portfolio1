@@ -1,0 +1,64 @@
+.wrapper2 {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.home-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center
+}
+
+.my-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding-left: 10px;
+}
+
+.home-container h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.home-container p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #f1f1f1;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    margin-top: 0;
+    padding-right: 10px;
+}
+
+.home-container {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .wrapper2 {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .home-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .home-container h2 {
+        font-size: 2rem;
+    }
+
+    .home-container p {
+        font-size: 1rem;
+    }
+
+}
+

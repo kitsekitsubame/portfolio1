@@ -1,0 +1,122 @@
+header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    max-width: 1000px;
+    width: 90%;
+    background: #001F3F;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    margin-top: 35px;
+}
+
+.top-right-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    right: 0;
+    z-index: 10;
+}
+
+.top-right-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    background-color: #000000;
+    padding: 5px 20px;
+}
+
+.top-right-nav ul li a {
+    text-decoration: none;
+    color: #A8DADC;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.top-right-nav ul li a:hover {
+    color: #ffffff;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(120deg, #001B3A, #6be0f5, #0E788A, #A8DADC);
+    background-size: 400% 400%;
+    animation: gradientBG 60s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #A8DADC;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+footer {
+    padding: 20px;
+    background: linear-gradient(135deg, #001F3F, #003A5D);
+    border-radius: 15px;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #A8DADC;
+    text-align: center;
+}
+
+footer .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+footer .icon {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .icon a {
+    display: inline-block;
+    width: 50px;
+    padding-top: 15px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    
+    .top-right-nav ul {
+        flex-wrap: wrap;
+    }
+    
+    body {
+        padding: 0 10px;
+    }
+
+    .wrapper {
+        padding: 10px;
+    }
+    footer {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+}
+
